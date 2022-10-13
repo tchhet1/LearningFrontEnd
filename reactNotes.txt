@@ -1,0 +1,10 @@
+React Notes:
+    - React Props are used to pass information down the component tree.
+    - React state is used to make applications interactive. 
+    - After the new state is set in a component, the component renders again, meaning the component function runs again.
+
+*** Array destructuring is just a shorthand version of accessing each item one by one. 
+If you express it without the array destructuring in React, it becomes less readable: ***
+
+Component declaration - defining component 
+Instance - using the defined component in other components
