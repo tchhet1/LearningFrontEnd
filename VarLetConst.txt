@@ -1,0 +1,26 @@
+Var, Let and Const:
+
+Var - function scoped; can be redeclared using the same variable name within the same scope.
+
+Let and Const - block scoped; variable declared using const can’t be reassigned. variable can’t be redeclared within the same scope. 
+
+Shadowing -  variable redeclared in a different or same scope. 
+for eg: 
+
+const shadowing = () => { 	
+	let a;
+	let a: // gives an error; therefore, can’t be redeclared.
+
+	if(true){ 		let a;  //perfectly fine 	}  }
+
+To be noted:  Javascript behind the scene works in 3 steps:
+	1. creates a window object
+	2. stores the variables (but not the values assigned to it) and functions in that window object 
+	3. executes the code line by line that’s when the variables get its value assigned.
+
+
+Hoisting - the declaration of  variables and functions gets moved to the top of the scope prior to execution of the code. This occurs in JS due to the step no. 2 in the above explanation. 
+
+Hoisting allows functions to be safely used in code before they are declared.
+
+Variables declared using Let and const gets hoisted in the temporal dead zone (variables that are in the scope but not declared yet); when tried to access these variables, it gives you an error.
