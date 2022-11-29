@@ -1,0 +1,11 @@
+
+alert - shows the message to the user
+
+propmpt - user is asked for input which can be then displaued on the UI. returns null if no input is entered.
+
+let age = propmpt('Enter your age ', 20) //default value is set to 20.
+
+confirm - shows a message, confirmw with ok or cancel. return true for ok and false for cancel.
+
+let response = confirm('Do you want to continue');
+

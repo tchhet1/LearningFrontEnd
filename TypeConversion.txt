@@ -1,0 +1,20 @@
+Automatic Type Converison:
+
+"5" + null -> 5null //converts both value to string
+5 + null -> 5 //converts null to 0
+
+2 + '5' -> 25 //converts num to string
+
+10 - '5' -> 5 //converts the string to number
+
+'5' * '2' -> 10 //converts string to number
+'5' * 'yes' -> NaN //unable to convert 'yes' to number
+
+
+
+
+1. Number()
+2. String()
+3. Boolean()
+
+Note: empty string an 0 is false; Any number except 0 will be considered true.

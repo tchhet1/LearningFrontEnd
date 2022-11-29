@@ -1,0 +1,41 @@
+
+
+
+
+
+'this' - refers to the particular object instance that you are working with.
+
+'this' in Arrow functions - inherited from the parent scope.
+
+DO NOT USE ARROW FUNCTIONS IN THE BELOW CASE:
+    const person2 = {
+    age: 10,
+    grow: () => {
+        // error: *this* refers to the `Window` Object
+        this.age++;
+        console.log(this.age);
+    }
+    }
+    person2.grow();
+
+
+
+
+Default Function Argument:
+    function calculatePrice(total, tax = 0.1, tip = 0.05){
+    // When no value is given for tax or tip, the default 0.1 and 0.05 will be used
+    return total + (total * tax) + (total * tip);
+    }
+
+With destructuring:
+    function calculatePrice({
+        total = 0,
+        tax = 0.1,
+        tip = 0.05} = {} ){
+        console.log(total + (total * tax) + (total * tip));
+    }
+
+const bill = calculatePrice({ tip: 0.15, total:150 });
+
+Functions in JavaScript, including constructor functions, are created with a prototype property, 
+which is an object containing properties and methods that should be available to instances of a particular object type.

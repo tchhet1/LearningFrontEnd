@@ -1,0 +1,30 @@
+for vs forEach vs for ... of:
+
+1. Simple For loop:
+    - loops through the indices
+    - Can start the loop from anywhere in the array
+    - Can loop through every other element or skip as many elements
+    - Can break out of the loop 
+2. forEach
+    - executes a provided function once for each array element.
+    - loops through the element of the array.
+    - forEach take two params (callback function and this argument).
+    - can't break the loop early.
+3. For ... of
+    - loops through the element of the array.
+    - will iterate over any of the iterables.
+    - will start at the begining and loop through all the elements;
+    - Can break out of the loop.
+4. For ... in
+    - will loop through object property
+    
+
+
+While vs Do While - Do While will run atleast once before it checks the condition. 
+
+
+Break, Continue and nested Loop:
+
+Break - will break the loop based on the given condition. The loop will no longer run. 
+
+Continue - will skip the loop based the condition but the loop will continue. 

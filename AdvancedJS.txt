@@ -1,0 +1,18 @@
+JSON - data format widely used to exchange data between web applications.
+    - Alternative of XML
+    -
+
+Serializing and Parsing JSON:
+    - stringify(): converts specified value into JSON representation
+    - parse(): converts JSON into an object.
+
+Function expression: assigning a variable to the function.
+    eg: var add = function (a, b) {
+                    return a + b;
+                }
+
+Recursive Function: 
+    - Recursion is a method of function calling in which a function calls itself during execution.
+    - Base case: A recursive function must contain a base case. This is a condition for the termination of execution.
+    - Recursive case: The function keeps calling itself again and again until the base case is reached.
+

@@ -1,0 +1,72 @@
+Flexbox model provides for an efficient way to layout, align, and distribute space among elements within your document, 
+even when the viewport and the size of your elements is dynamic or unknown.
+
+To use Flexbox, first thing we need to do is set "display: flex || inline-flex" to the direct parent element. 
+
+6 different properties the flex container can take on:
+
+1. Flex-direction - row || column || row-reverse || column-reverse;
+    default value is row.
+    The main-axis’ default direction feels like “horizontal.” From left to right.
+    The cross-axis feels like “vertical.” From top to bottom.
+
+2. Flex-wrap - wrap || no-wrap || wrap-reverse;
+    no-wrap is the default value.
+    wrap-reverse lets the flex items break unto multiple lines, but in the reverse direction.
+
+3. Flex-flow - shorthand for flex-direction and flex-wrap. 
+    flex-flow: row wrap; /*direction 'row' and yes, please wrap the items.*/
+
+4. Justify-content - defines how flex items are laid out on the main axis.
+	justify-content: flex-start || flex-end || center || space-between || space-around
+    default value is flex-start - groups all the items to the start of the main axis.
+
+5. align-items - defines how the flex items are laid out on the cross axis. 
+    align-items: flex-start || flex-end || center || stretch || baseline
+    default value is stretch.
+
+6. align-content -  it controls how the flex-items are aligned in a multi-line flex container.
+    align-content: flex-start || flex-end || center || stretch
+    default value is stretch.
+
+
+Properties of flex items:
+    1. Order - allows for reordering of the flex items.
+        Make the order value of a flex-item higher than that of other list items.
+        example: li:nth-child(1) {
+		            order: 1; /*give it a value higher than 0. Remember it's ```order:0``` for other flex-items by default*/
+	            }
+        The re-ordering is based on the positions in the source file, when two or more flex items have the same order value.
+    
+    2. Flex-grow and Flex-shrink  (research more on this) - controls how much a flex item should grow if there is extra space and shrink if there is no extra space.
+        default value is '0'.
+        setting flex-grow to '1' or higher number will tell the element to take up all the extra space.
+
+    3. Flex-basis - pecifies the initial size of a flex-item.
+        default value is auto.
+        can use percentages || ems || rems || pixels.
+        width of the flex-item is computed “automatically” based on the content size (and obviously, plus whatever padding you set too)
+    
+    4. Flex - shorthand for grow, shrink and basis.
+        default  value - flex: 0 1 auto; //grow, shrink, basis 
+        flex: 0 0 auto; //same as none
+
+    5. Align-self - change the position of a single flex-item along the cross-axis, without affecting the neighboring flex-items
+        align-self: auto || flex-start || flex-end || center || baseline || stretch
+
+
+Relative and Absolute Flex Items:
+    	flex: auto; /*remember this is same as flex: 1 1 auto;*/
+        the above is an example of relative flex items. the width is based on the content.
+
+        flex: 1 ; /*same as flex: 1 1 0 */
+        the above is an example of absolute width. the width of flex items will be the same for every flex items.
+
+
+Absolute flex-items have their widths based solely on flex, while relative flex items have their widths based on content size.
+
+Default layout is row where the main axis is horizontal left to right and cross axis is vertical top to bottom. 
+
+when the layout is chnaged from row to column, the main axis becomes top to bottom and cross axis becomes left to right.
+
+

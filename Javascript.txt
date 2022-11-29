@@ -1,0 +1,18 @@
+Data Types:
+    Primitive - strings, number, boolean, null, undefined and symbol
+    Object - array, key and value pair Object
+
+
+
+
+A quick way of making a clone of an Object in JavaScript is to use Object.assign.
+
+
+Operators:
+&&= - x &&= y, only assigns if x is truthy.
+||= - x ||= y, only assigns if x is falsy.
+??=  - x ??= y, the value of y will be assigned to x only if x is null.
+
+
+
+

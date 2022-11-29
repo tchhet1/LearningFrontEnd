@@ -1,0 +1,4 @@
+ Hoisting, Scope, Callback, Arrow Functions:
+
+ First Class Functions: Functions that can be treated like a variable.
+ 

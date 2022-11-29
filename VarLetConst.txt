@@ -7,11 +7,11 @@ Let and Const - block scoped; variable declared using const can’t be reassigne
 Shadowing -  variable redeclared in a different or same scope. 
 for eg: 
 
-const shadowing = () => { 	
+const shadowing = () => {	
 	let a;
 	let a: // gives an error; therefore, can’t be redeclared.
 
-	if(true){ 		let a;  //perfectly fine 	}  }
+	if(true){		let a;  //perfectly fine	}}
 
 To be noted:  Javascript behind the scene works in 3 steps:
 	1. creates a window object
