@@ -1,0 +1,3 @@
+this - refers to the object that is calling the fucntion.
+
+doesn't work with arrow functions.

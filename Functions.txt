@@ -1,4 +1,15 @@
- Hoisting, Scope, Callback, Arrow Functions:
 
- First Class Functions: Functions that can be treated like a variable.
- 
+Arguments is a built in array that stores the arguments passed in the function. 
+can be accessed using the index. 
+arguments can be accessed without defining the parameters.
+
+Anonymous function - function that doesn't have a name.
+    let anonymous = function(){
+        console.log('test');
+    }
+
+setTimeout(FunctionName, 3000); //can be used to delay the execution of a function.
+
+Immediately invoked function - gets executed as soon as the fucntion is defined.
+    can be used to save memory space.
+    can be used to avoid conflict between variables while using third party library.

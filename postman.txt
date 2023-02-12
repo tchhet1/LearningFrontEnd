@@ -1,0 +1,43 @@
+API Testing:
+
+Presentation Layer (HTML, CSS, JavaScript) : 
+    - client 
+    - GUI testing (GUI can be tested using Selenium)
+    - initiates the request to server. 
+            |
+Application Layer (Business Logic - Java, Python, C#, etc)
+    - API testing (request sent and response is received)
+            |
+Data Layer(MySql, Sql, MongoDB, etc)
+    - Database testing
+
+
+API - Application Programming Interface
+    - enables communication between two systems (client and server).
+
+Web Service: API testing done over the internet. 
+    - for this to be executed, API should be available on the web.
+    - an API wrapped in HTTP
+    - Types of web services: 
+        - SOAP (simple object access protocol, not used any longer, abit complex) 
+        - RESTful (representation state transfer)
+
+
+RESTful API: 
+    - HTTP request (GET, POST, PUT and DELETE)
+
+
+
+
+Postman is a tool/software that allows to perform api testing. 
+
+Test case are put under test tab in Postman.
+ for example: 
+    tests['validating status code'] = responseCode.code == 200;
+
+    let response = JSON.parse(responseBody);
+    tests['validating the username'] = response[0].email == ('Sincere@april.biz');
+
+    
+    
+

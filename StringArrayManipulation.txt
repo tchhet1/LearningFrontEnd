@@ -1,0 +1,55 @@
+
+let str = 'Tripti /n Chhetri'; //prints Chhetri in new line
+let str = 'Tripti /t Chhetri'; //adds tab space after the first word
+
+escaping special characting using '\'
+
+str.concat(" ", str1);
+
+Extracting text from string:
+
+str.substr(start index, length);
+str.substring(start index, end index);
+
+
+str.trim() - remove space from the front and end of thes string.
+trimStart() - removes space from the start of the string.
+trimEnd() - removes space from the end.
+
+str.replace('good', 'best');
+
+
+str.indexOf('the') - retunr the position
+str.includes() - returns true or false
+
+
+Array Manipulation:
+
+let arr = ['Math', 'English', 'Science'];
+
+arr.push('Sociology');
+arr.pop(); //returns the element that was removed from the end of Array
+
+arr.shift(); //removes element from the beginning of array
+arr.unshift('Accounts'); //adds element to the beginning of the Array
+
+arr.splice(start index, num of elements); return the removed element and updates the arr
+
+emptying the array:
+    arr = [];
+    arr.length = 0;
+
+Array.isArray(arr); //returns true or false
+
+let splitArr = arr.split(' ');
+
+Merging two arrays:
+    let arr = [1, 2, 3];
+    let arr1 = [100, 200, 300];
+
+    let arr3 = arr.concat(arr1, arr4);
+
+Multidimensional array:
+    
+
+

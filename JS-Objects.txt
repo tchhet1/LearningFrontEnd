@@ -1,8 +1,3 @@
-
-
-
-
-
 'this' - refers to the particular object instance that you are working with.
 
 'this' in Arrow functions - inherited from the parent scope.
@@ -39,3 +34,22 @@ const bill = calculatePrice({ tip: 0.15, total:150 });
 
 Functions in JavaScript, including constructor functions, are created with a prototype property, 
 which is an object containing properties and methods that should be available to instances of a particular object type.
+
+Object constructor:
+
+function Student(name, age, weight){
+    this.name = name,
+    this.age = age,
+    this.weight = weight
+}
+
+Student.nationality('USA'); //Not Valid with construction function, can be used with object variable
+new properties needs to be added withing the contructor itself.89
+
+Creating an object from constructor:
+    let student1 = new Student('Tripti', 33, 130);
+    student1.nationality('Nepal'); //Valid
+
+
+
+

@@ -1,0 +1,31 @@
+
+Math.round(4.2) - 4
+Math.round(4.7) - 5
+
+Math.floor(4.2) - 4
+Math.floor(4.7) - 4
+
+Math.ceil(4.2) - 5
+Math.ceil(4.9) - 5
+
+Math.trunc(4.3) - 4
+Math.trunc(4.9) - 4 //truncates the number after decimal
+
+Math.pow(2, 3) - 8 //gives us the result 2 to the power of 3
+
+Math.sqrt(100) - 10 
+
+Math.max(200, 201, 100) - 201
+
+Math.min(100, -3, 88, 4, 30, 22) - -3
+
+
+Math.random() * 11 - randomly print number between 0 to 10.
+
+
+let date = new Date();
+
+date.getFullYear();
+date.setFullYear(2023);
+
+date.setDate(date.getDate() + 50);
